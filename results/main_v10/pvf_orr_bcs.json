@@ -1,0 +1,44 @@
+{
+  "PVF": {
+    "Aspectual": {
+      "llama3.2-3b": 0.2,
+      "qwen2.5-3b": 0.1
+    },
+    "Change-of-state": {
+      "llama3.2-3b": 0.967,
+      "qwen2.5-3b": 0.867
+    },
+    "Cleft": {
+      "llama3.2-3b": 0.533,
+      "qwen2.5-3b": 0.2
+    },
+    "Definite description": {
+      "llama3.2-3b": 0.8,
+      "qwen2.5-3b": 0.733
+    },
+    "Existential": {
+      "llama3.2-3b": 0.767,
+      "qwen2.5-3b": 0.7
+    },
+    "Factive": {
+      "llama3.2-3b": 0.733,
+      "qwen2.5-3b": 0.633
+    }
+  },
+  "ORR": {
+    "llama3.2-3b": 0.667,
+    "qwen2.5-3b": 0.539
+  },
+  "BCS_by_model": {
+    "llama3.2-3b": 0.817,
+    "qwen2.5-3b": 0.917
+  },
+  "BCS_by_trigger": {
+    "Aspectual": 0.85,
+    "Change-of-state": 0.9,
+    "Cleft": 0.9,
+    "Definite description": 0.85,
+    "Existential": 0.95,
+    "Factive": 0.75
+  }
+}

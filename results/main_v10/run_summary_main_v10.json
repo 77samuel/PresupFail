@@ -1,0 +1,26 @@
+{
+  "run_timestamp": "2026-06-18T19:06:08.627232",
+  "mode": "main",
+  "temperature": 0.3,
+  "models": [
+    "llama3.2-3b",
+    "qwen2.5-3b"
+  ],
+  "n_items": 60,
+  "n_generations": 3,
+  "max_new_tokens": 300,
+  "expected_records": 720,
+  "valid_records": 720,
+  "excluded_records": 0,
+  "exclusion_criteria": {
+    "min_response_tokens": 5,
+    "max_response_tokens": 600,
+    "safety_filter": true,
+    "empty_output": true,
+    "inference_error": true
+  },
+  "transformers_version": "5.0.0",
+  "torch_version": "2.10.0+cu128",
+  "cuda_version": "12.8",
+  "python_version": "3.12.13"
+}

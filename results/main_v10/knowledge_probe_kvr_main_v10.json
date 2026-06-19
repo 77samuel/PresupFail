@@ -1,0 +1,79 @@
+{
+  "by_model": {
+    "llama3.2-3b": {
+      "C": 0,
+      "I": 0,
+      "Ab": 0,
+      "Fk": 0,
+      "unannotated": 180,
+      "total": 180,
+      "KVR": null
+    },
+    "qwen2.5-3b": {
+      "C": 0,
+      "I": 0,
+      "Ab": 0,
+      "Fk": 0,
+      "unannotated": 180,
+      "total": 180,
+      "KVR": null
+    }
+  },
+  "by_trigger": {
+    "Definite description": {
+      "C": 0,
+      "I": 0,
+      "Ab": 0,
+      "Fk": 0,
+      "unannotated": 60,
+      "total": 60,
+      "KVR": null
+    },
+    "Existential": {
+      "C": 0,
+      "I": 0,
+      "Ab": 0,
+      "Fk": 0,
+      "unannotated": 60,
+      "total": 60,
+      "KVR": null
+    },
+    "Cleft": {
+      "C": 0,
+      "I": 0,
+      "Ab": 0,
+      "Fk": 0,
+      "unannotated": 60,
+      "total": 60,
+      "KVR": null
+    },
+    "Factive": {
+      "C": 0,
+      "I": 0,
+      "Ab": 0,
+      "Fk": 0,
+      "unannotated": 60,
+      "total": 60,
+      "KVR": null
+    },
+    "Aspectual": {
+      "C": 0,
+      "I": 0,
+      "Ab": 0,
+      "Fk": 0,
+      "unannotated": 60,
+      "total": 60,
+      "KVR": null
+    },
+    "Change-of-state": {
+      "C": 0,
+      "I": 0,
+      "Ab": 0,
+      "Fk": 0,
+      "unannotated": 60,
+      "total": 60,
+      "KVR": null
+    }
+  },
+  "formula": "KVR = C / (C + I + Ab + Fk)"
+}

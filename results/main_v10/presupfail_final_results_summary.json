@@ -1,0 +1,141 @@
+{
+  "dataset": "PresupFail Benchmark v1.0 - Main Experiment",
+  "total_presupposition_responses": 360,
+  "total_knowledge_responses": 360,
+  "models": [
+    "llama3.2-3b",
+    "qwen2.5-3b"
+  ],
+  "trigger_behavior_table": {
+    "Aspectual": {
+      "R": 9,
+      "P": 19,
+      "F": 1,
+      "A": 31,
+      "U": 0,
+      "total": 60,
+      "rejection_rate": 0.15
+    },
+    "Change-of-state": {
+      "R": 55,
+      "P": 0,
+      "F": 5,
+      "A": 0,
+      "U": 0,
+      "total": 60,
+      "rejection_rate": 0.917
+    },
+    "Cleft": {
+      "R": 22,
+      "P": 14,
+      "F": 5,
+      "A": 19,
+      "U": 0,
+      "total": 60,
+      "rejection_rate": 0.367
+    },
+    "Definite description": {
+      "R": 46,
+      "P": 7,
+      "F": 4,
+      "A": 0,
+      "U": 3,
+      "total": 60,
+      "rejection_rate": 0.767
+    },
+    "Existential": {
+      "R": 44,
+      "P": 3,
+      "F": 3,
+      "A": 7,
+      "U": 3,
+      "total": 60,
+      "rejection_rate": 0.733
+    },
+    "Factive": {
+      "R": 41,
+      "P": 3,
+      "F": 2,
+      "A": 12,
+      "U": 2,
+      "total": 60,
+      "rejection_rate": 0.683
+    }
+  },
+  "model_behavior_table": {
+    "llama3.2-3b": {
+      "R": 120,
+      "P": 19,
+      "F": 6,
+      "A": 29,
+      "U": 6,
+      "total": 180,
+      "rejection_rate": 0.667
+    },
+    "qwen2.5-3b": {
+      "R": 97,
+      "P": 27,
+      "F": 14,
+      "A": 40,
+      "U": 2,
+      "total": 180,
+      "rejection_rate": 0.539
+    }
+  },
+  "statistical_tests": {
+    "trigger_x_behavior_chi_square": {
+      "chi2": 151.409,
+      "p_value": 3.37565117937332e-22,
+      "dof": 20,
+      "cramers_v": 0.324,
+      "gate_3": "PASS"
+    },
+    "model_x_behavior_chi_square": {
+      "chi2": 10.783,
+      "p_value": 0.029118,
+      "cramers_v": 0.173
+    },
+    "kruskal_wallis_architecture": {
+      "h_statistic": 2.143,
+      "p_value": 0.143197,
+      "gate_4": "NOT SIGNIFICANT (negative finding)"
+    }
+  },
+  "mechanism_table": {
+    "C+R": 214,
+    "C+A": 63,
+    "Ab+P": 3,
+    "C+P": 43,
+    "C+F": 18,
+    "I+F": 2,
+    "I+U": 2,
+    "I+R": 3,
+    "Ab+A": 1,
+    "I+A": 5,
+    "C+U": 6,
+    "pragmatic_failure_total": 124,
+    "epistemic_failure_total": 7,
+    "gate_5": {
+      "pragmatic": "CONFIRMATORY",
+      "epistemic": "EXPLORATORY"
+    }
+  },
+  "kvr": {
+    "llama3.2-3b": {
+      "C": 169,
+      "I": 8,
+      "Ab": 3,
+      "Fk": 0,
+      "total": 180,
+      "KVR": 0.939
+    },
+    "qwen2.5-3b": {
+      "C": 175,
+      "I": 4,
+      "Ab": 1,
+      "Fk": 0,
+      "total": 180,
+      "KVR": 0.972
+    }
+  }
+}
