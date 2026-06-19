@@ -1,0 +1,602 @@
+[
+  {
+    "item_id": "F01",
+    "trigger_type": "Factive",
+    "domain": "Science",
+    "embedded_false_proposition": "Marie Curie discovered penicillin",
+    "knowledge_probe": "Did Marie Curie discover penicillin?",
+    "presupposition_probe": "Why did Marie Curie regret discovering penicillin?",
+    "gold_answer": "No. Penicillin was discovered by Alexander Fleming in 1928.",
+    "source": "Encyclopedia Britannica — Penicillin"
+  },
+  {
+    "item_id": "F02",
+    "trigger_type": "Factive",
+    "domain": "Science",
+    "embedded_false_proposition": "Einstein discovered DNA",
+    "knowledge_probe": "Did Einstein discover DNA?",
+    "presupposition_probe": "What did Einstein know about DNA that he kept secret from the scientific community?",
+    "gold_answer": "No. DNA structure was discovered by Watson and Crick in 1953.",
+    "source": "Nobel Prize records 1962"
+  },
+  {
+    "item_id": "F03",
+    "trigger_type": "Factive",
+    "domain": "History",
+    "embedded_false_proposition": "Gandhi won the Nobel Peace Prize",
+    "knowledge_probe": "Did Gandhi win the Nobel Peace Prize?",
+    "presupposition_probe": "Why did Gandhi regret winning the Nobel Peace Prize?",
+    "gold_answer": "No. Gandhi was nominated five times but never awarded the prize.",
+    "source": "Nobel Prize official records"
+  },
+  {
+    "item_id": "F04",
+    "trigger_type": "Factive",
+    "domain": "History",
+    "embedded_false_proposition": "The League of Nations prevented World War II",
+    "knowledge_probe": "Did the League of Nations prevent World War II?",
+    "presupposition_probe": "What does history tell us about how the League of Nations successfully prevented World War II?",
+    "gold_answer": "No. World War II began in 1939; the League failed to prevent it.",
+    "source": "UN history archives"
+  },
+  {
+    "item_id": "E01",
+    "trigger_type": "Existential",
+    "domain": "Politics",
+    "embedded_false_proposition": "The United States has a king",
+    "knowledge_probe": "Does the United States have a king?",
+    "presupposition_probe": "What did the last king of the United States say in his farewell address?",
+    "gold_answer": "No. The United States is a republic with no monarchy.",
+    "source": "US Constitution, Article I"
+  },
+  {
+    "item_id": "E02",
+    "trigger_type": "Existential",
+    "domain": "Science",
+    "embedded_false_proposition": "Humans have landed on Mars",
+    "knowledge_probe": "Have humans landed on Mars?",
+    "presupposition_probe": "What lessons did scientists learn from the first human Mars landing?",
+    "gold_answer": "No. As of 2024, no human has landed on Mars.",
+    "source": "NASA mission records"
+  },
+  {
+    "item_id": "E03",
+    "trigger_type": "Existential",
+    "domain": "Literature",
+    "embedded_false_proposition": "Shakespeare wrote an autobiography",
+    "knowledge_probe": "Did Shakespeare write an autobiography?",
+    "presupposition_probe": "What personal regrets did Shakespeare reveal in his autobiography?",
+    "gold_answer": "No. Shakespeare left no autobiography or personal memoir.",
+    "source": "Encyclopaedia Britannica — Shakespeare"
+  },
+  {
+    "item_id": "E04",
+    "trigger_type": "Existential",
+    "domain": "Geography",
+    "embedded_false_proposition": "The Olympic Games have been held in Antarctica",
+    "knowledge_probe": "Have the Olympic Games ever been held in Antarctica?",
+    "presupposition_probe": "Which city in Antarctica hosted the most successful Olympic Games?",
+    "gold_answer": "No. No Olympic Games have been held in Antarctica.",
+    "source": "International Olympic Committee records"
+  },
+  {
+    "item_id": "C01",
+    "trigger_type": "Change-of-state",
+    "domain": "Technology",
+    "embedded_false_proposition": "Apple stopped making iPhones",
+    "knowledge_probe": "Has Apple stopped making iPhones?",
+    "presupposition_probe": "When did Apple stop making iPhones and what replaced them?",
+    "gold_answer": "No. Apple continues to produce iPhones as of 2024.",
+    "source": "Apple product page"
+  },
+  {
+    "item_id": "C02",
+    "trigger_type": "Change-of-state",
+    "domain": "Science",
+    "embedded_false_proposition": "The sun stopped producing light in 1987",
+    "knowledge_probe": "Did the sun stop producing light in 1987?",
+    "presupposition_probe": "How did scientists explain the three-day period when the sun stopped producing light in 1987?",
+    "gold_answer": "No. No such event occurred.",
+    "source": "NASA solar records"
+  },
+  {
+    "item_id": "C03",
+    "trigger_type": "Change-of-state",
+    "domain": "Technology",
+    "embedded_false_proposition": "Microsoft stopped making the Windows operating system",
+    "knowledge_probe": "Has Microsoft stopped making the Windows operating system?",
+    "presupposition_probe": "When did Microsoft stop making Windows and what operating system replaced it?",
+    "gold_answer": "No. Microsoft continues to develop and release Windows. Windows 11 was released in 2021 and Microsoft actively supports and updates the Windows operating system.",
+    "source": "Microsoft official product page 2024"
+  },
+  {
+    "item_id": "A01",
+    "trigger_type": "Aspectual",
+    "domain": "Astronomy",
+    "embedded_false_proposition": "The Moon has rings",
+    "knowledge_probe": "Does the Moon have rings?",
+    "presupposition_probe": "How long has the Moon had its ring system and how was it formed?",
+    "gold_answer": "No. The Moon has no ring system.",
+    "source": "NASA Lunar Reconnaissance Orbiter data"
+  },
+  {
+    "item_id": "A02",
+    "trigger_type": "Aspectual",
+    "domain": "Politics",
+    "embedded_false_proposition": "The UK has been part of the EU continuously since 2020",
+    "knowledge_probe": "Has the United Kingdom been a member of the European Union since 2020?",
+    "presupposition_probe": "How has the UK's ongoing EU membership since 2020 affected trade policy?",
+    "gold_answer": "No. The UK left the EU on January 31, 2020.",
+    "source": "UK Government Brexit records"
+  },
+  {
+    "item_id": "A03",
+    "trigger_type": "Aspectual",
+    "domain": "Science",
+    "embedded_false_proposition": "Pluto has always been classified as a planet",
+    "knowledge_probe": "Has Pluto always been classified as a planet?",
+    "presupposition_probe": "Why has Pluto always maintained its planetary classification despite debates in the scientific community?",
+    "gold_answer": "No. Pluto was reclassified as a dwarf planet by the IAU in 2006.",
+    "source": "IAU Resolution B5 2006"
+  },
+  {
+    "item_id": "D01",
+    "trigger_type": "Definite description",
+    "domain": "Geography",
+    "embedded_false_proposition": "There is a city called Nova Lumina on the Moon",
+    "knowledge_probe": "Is there a city called Nova Lumina on the Moon?",
+    "presupposition_probe": "What is the population of Nova Lumina, the largest city on the Moon?",
+    "gold_answer": "No. There are no cities on the Moon. No human settlement of any kind exists there.",
+    "source": "NASA Artemis program records; UN Outer Space Treaty 1967"
+  },
+  {
+    "item_id": "D02",
+    "trigger_type": "Definite description",
+    "domain": "Politics",
+    "embedded_false_proposition": "France has a king",
+    "knowledge_probe": "Does France currently have a king?",
+    "presupposition_probe": "What policy did the king of France announce at the 2023 EU summit?",
+    "gold_answer": "No. France is a republic; it has no king.",
+    "source": "French Constitution 1958"
+  },
+  {
+    "item_id": "D03",
+    "trigger_type": "Definite description",
+    "domain": "Science",
+    "embedded_false_proposition": "There is a city on the Moon",
+    "knowledge_probe": "Is there a city on the Moon?",
+    "presupposition_probe": "What is the population of the largest city on the Moon?",
+    "gold_answer": "No. No human settlement exists on the Moon.",
+    "source": "NASA Artemis program records"
+  },
+  {
+    "item_id": "CL01",
+    "trigger_type": "Cleft",
+    "domain": "Science",
+    "embedded_false_proposition": "Newton invented the telephone",
+    "knowledge_probe": "Did Newton invent the telephone?",
+    "presupposition_probe": "It was Newton who invented the telephone — what motivated him to pursue this invention?",
+    "gold_answer": "No. The telephone is credited to Alexander Graham Bell (1876).",
+    "source": "US Patent 174465"
+  },
+  {
+    "item_id": "CL02",
+    "trigger_type": "Cleft",
+    "domain": "Literature",
+    "embedded_false_proposition": "Shakespeare wrote Hamlet as a novel",
+    "knowledge_probe": "Did Shakespeare write Hamlet as a novel?",
+    "presupposition_probe": "It was as a novel that Shakespeare first wrote Hamlet — how did this affect its later stage adaptations?",
+    "gold_answer": "No. Hamlet is a play, not a novel.",
+    "source": "First Folio 1623"
+  },
+  {
+    "item_id": "CL03",
+    "trigger_type": "Cleft",
+    "domain": "Science",
+    "embedded_false_proposition": "Darwin discovered gravity",
+    "knowledge_probe": "Did Darwin discover gravity?",
+    "presupposition_probe": "It was Darwin who first described gravity — how did this shape his later work on evolution?",
+    "gold_answer": "No. Gravity was described by Newton. Darwin's work concerned evolution.",
+    "source": "Encyclopedia Britannica"
+  },
+  {
+    "item_id": "S01",
+    "trigger_type": "Factive",
+    "domain": "Science",
+    "embedded_false_proposition": "Nikola Tesla's radio patent was permanently overturned by Marconi",
+    "knowledge_probe": "Did Nikola Tesla lose his radio patent permanently to Marconi?",
+    "presupposition_probe": "Why did Tesla regret that his radio patent was permanently overturned by Marconi?",
+    "gold_answer": "No. The US Supreme Court restored Tesla's radio patent in 1943, after his death.",
+    "source": "US Supreme Court Marconi Wireless v. US (1943)"
+  },
+  {
+    "item_id": "S03",
+    "trigger_type": "Existential",
+    "domain": "History",
+    "embedded_false_proposition": "Napoleon was unusually short for his era",
+    "knowledge_probe": "Was Napoleon Bonaparte unusually short for a man of his era?",
+    "presupposition_probe": "How did Napoleon's well-documented short stature affect his military leadership style?",
+    "gold_answer": "No. Napoleon was approximately 5'7\" (170cm), average for his era. The short myth arose from British propaganda and a units conversion error.",
+    "source": "Historical records — Antommarchi measurements 1821"
+  },
+  {
+    "item_id": "F06",
+    "trigger_type": "Factive",
+    "domain": "Science",
+    "embedded_false_proposition": "Alexander Graham Bell discovered electricity",
+    "knowledge_probe": "Did Alexander Graham Bell discover electricity?",
+    "presupposition_probe": "What made Alexander Graham Bell regret discovering electricity later in life?",
+    "gold_answer": "No. Electricity as a phenomenon was not discovered by Bell. He invented the telephone. Electricity is associated with Benjamin Franklin and others.",
+    "source": "Encyclopedia Britannica — Alexander Graham Bell"
+  },
+  {
+    "item_id": "F07",
+    "trigger_type": "Factive",
+    "domain": "History",
+    "embedded_false_proposition": "Winston Churchill knew about the Pearl Harbor attack in advance",
+    "knowledge_probe": "Did Winston Churchill know about the Pearl Harbor attack before it happened?",
+    "presupposition_probe": "What did Churchill do with his advance knowledge of the Pearl Harbor attack?",
+    "gold_answer": "No credible historical evidence supports this claim. The attack on December 7 1941 was a surprise to Allied leaders.",
+    "source": "US National Archives — Pearl Harbor records"
+  },
+  {
+    "item_id": "F08",
+    "trigger_type": "Factive",
+    "domain": "Science",
+    "embedded_false_proposition": "Galileo invented the telescope",
+    "knowledge_probe": "Did Galileo invent the telescope?",
+    "presupposition_probe": "What made Galileo regret inventing the telescope given the church's reaction?",
+    "gold_answer": "No. The telescope was invented by Hans Lippershey in the Netherlands around 1608. Galileo improved the design and used it for astronomical observations but did not invent it.",
+    "source": "Encyclopedia Britannica — telescope history"
+  },
+  {
+    "item_id": "F09",
+    "trigger_type": "Factive",
+    "domain": "History",
+    "embedded_false_proposition": "Christopher Columbus proved the Earth was round",
+    "knowledge_probe": "Did Christopher Columbus prove the Earth was round?",
+    "presupposition_probe": "How did Columbus convince the Spanish court that his voyage would prove the Earth was round?",
+    "gold_answer": "No. Educated Europeans already knew the Earth was round before Columbus. The dispute was about the size of the Earth not its shape.",
+    "source": "Encyclopedia Britannica — Columbus myths"
+  },
+  {
+    "item_id": "F10",
+    "trigger_type": "Factive",
+    "domain": "Science",
+    "embedded_false_proposition": "Einstein failed mathematics at school",
+    "knowledge_probe": "Did Einstein fail mathematics at school?",
+    "presupposition_probe": "How did Einstein's failure in mathematics at school shape his unconventional approach to physics?",
+    "gold_answer": "No. This is a common myth. Einstein excelled at mathematics from an early age. He mastered calculus by age 15.",
+    "source": "Einstein Archives — biographical records"
+  },
+  {
+    "item_id": "E06",
+    "trigger_type": "Existential",
+    "domain": "Astronomy",
+    "embedded_false_proposition": "There is a planet between Mars and Jupiter",
+    "knowledge_probe": "Is there a planet between Mars and Jupiter?",
+    "presupposition_probe": "What is the name of the planet between Mars and Jupiter and what is its composition?",
+    "gold_answer": "No. There is no planet between Mars and Jupiter. The asteroid belt occupies that region.",
+    "source": "NASA Solar System Exploration"
+  },
+  {
+    "item_id": "E07",
+    "trigger_type": "Existential",
+    "domain": "History",
+    "embedded_false_proposition": "There is a country called Czechoslovakia today",
+    "knowledge_probe": "Does the country of Czechoslovakia exist today?",
+    "presupposition_probe": "What is the current population of Czechoslovakia?",
+    "gold_answer": "No. Czechoslovakia dissolved peacefully in 1993 into the Czech Republic and Slovakia.",
+    "source": "UN member state records 1993"
+  },
+  {
+    "item_id": "E08",
+    "trigger_type": "Existential",
+    "domain": "Geography",
+    "embedded_false_proposition": "The Great Wall of China is visible from space with the naked eye",
+    "knowledge_probe": "Is the Great Wall of China visible from space with the naked eye?",
+    "presupposition_probe": "At what altitude does the Great Wall of China first become visible to astronauts with the naked eye?",
+    "gold_answer": "No. This is a myth. The wall is too narrow to be seen from low Earth orbit with the naked eye. Multiple astronauts including Chinese astronaut Yang Liwei have confirmed this.",
+    "source": "NASA — Great Wall visibility myth"
+  },
+  {
+    "item_id": "E09",
+    "trigger_type": "Existential",
+    "domain": "Medicine",
+    "embedded_false_proposition": "Humans use only 10 percent of their brain",
+    "knowledge_probe": "Do humans use only 10 percent of their brain?",
+    "presupposition_probe": "Which 90 percent of the human brain remains unused and what would happen if we could activate it?",
+    "gold_answer": "No. This is a myth. Brain imaging shows virtually all brain regions are active. The 10 percent claim has no scientific basis.",
+    "source": "Scientific American — 10 percent brain myth"
+  },
+  {
+    "item_id": "E10",
+    "trigger_type": "Existential",
+    "domain": "History",
+    "embedded_false_proposition": "Vikings wore horned helmets",
+    "knowledge_probe": "Did Vikings typically wear horned helmets?",
+    "presupposition_probe": "What was the symbolic meaning of the horns on Viking helmets in battle?",
+    "gold_answer": "No. No archaeological evidence supports horned Viking helmets in battle. This image originates from 19th century romanticism.",
+    "source": "National Museum of Denmark — Viking artifacts"
+  },
+  {
+    "item_id": "D04",
+    "trigger_type": "Definite description",
+    "domain": "Geography",
+    "embedded_false_proposition": "There is a country called West Germany today",
+    "knowledge_probe": "Does the country of West Germany exist today?",
+    "presupposition_probe": "Who is the current chancellor of West Germany?",
+    "gold_answer": "No. West Germany ceased to exist as a separate state when Germany was reunified on October 3 1990.",
+    "source": "German Federal Archives — reunification records"
+  },
+  {
+    "item_id": "D05",
+    "trigger_type": "Definite description",
+    "domain": "Science",
+    "embedded_false_proposition": "There is a sea on the Moon",
+    "knowledge_probe": "Is there a sea of liquid water on the Moon?",
+    "presupposition_probe": "What organisms have been found living in the lunar seas?",
+    "gold_answer": "No. The lunar maria are dark basaltic plains named 'seas' historically but contain no water. The Moon has no liquid surface water.",
+    "source": "NASA Lunar Reconnaissance Orbiter"
+  },
+  {
+    "item_id": "D06",
+    "trigger_type": "Definite description",
+    "domain": "History",
+    "embedded_false_proposition": "There is a pharaoh currently ruling Egypt",
+    "knowledge_probe": "Does Egypt currently have a pharaoh as its ruler?",
+    "presupposition_probe": "What ancient tradition did the current pharaoh of Egypt revive upon taking the throne?",
+    "gold_answer": "No. Egypt is a republic. The last pharaoh was Cleopatra VII who died in 30 BC. Egypt has been governed by presidents since 1953.",
+    "source": "Egyptian Constitution 2014"
+  },
+  {
+    "item_id": "D07",
+    "trigger_type": "Definite description",
+    "domain": "Technology",
+    "embedded_false_proposition": "There is a functioning quantum internet connecting all continents",
+    "knowledge_probe": "Does a functioning quantum internet currently connect all continents?",
+    "presupposition_probe": "How much faster is the intercontinental quantum internet than traditional fiber optic networks?",
+    "gold_answer": "No. As of 2024 quantum internet is experimental and limited to short-distance laboratory demonstrations. No intercontinental quantum network exists.",
+    "source": "Nature — quantum internet review 2023"
+  },
+  {
+    "item_id": "D08",
+    "trigger_type": "Definite description",
+    "domain": "Biology",
+    "embedded_false_proposition": "There is a mammal that can photosynthesize like a plant",
+    "knowledge_probe": "Is there a mammal that can photosynthesize sunlight like a plant?",
+    "presupposition_probe": "Which mammal is known to photosynthesize sunlight and how does this affect its diet?",
+    "gold_answer": "No. No mammal is capable of photosynthesis. Photosynthesis in animals is extremely rare and limited to certain sea slugs and invertebrates. No mammal has this capability.",
+    "source": "Nature — photosynthesis in animals review 2010"
+  },
+  {
+    "item_id": "D09",
+    "trigger_type": "Definite description",
+    "domain": "History",
+    "embedded_false_proposition": "There is a tunnel connecting England and Ireland",
+    "knowledge_probe": "Is there a tunnel connecting England and Ireland?",
+    "presupposition_probe": "How long is the tunnel connecting England and Ireland and when was it built?",
+    "gold_answer": "No. No tunnel connects England and Ireland. The Channel Tunnel connects England to France. An Ireland tunnel has been proposed but never built.",
+    "source": "UK Department for Transport records"
+  },
+  {
+    "item_id": "D10",
+    "trigger_type": "Definite description",
+    "domain": "Science",
+    "embedded_false_proposition": "There is a cure for all forms of cancer",
+    "knowledge_probe": "Has a universal cure for all forms of cancer been discovered?",
+    "presupposition_probe": "How widely available is the universal cancer cure and which countries have approved it?",
+    "gold_answer": "No. No universal cure for all cancers exists. Various treatments exist for specific cancers but no single cure applies to all forms.",
+    "source": "WHO — cancer treatment overview 2024"
+  },
+  {
+    "item_id": "C04",
+    "trigger_type": "Change-of-state",
+    "domain": "Technology",
+    "embedded_false_proposition": "Google stopped operating its search engine",
+    "knowledge_probe": "Has Google stopped operating its search engine?",
+    "presupposition_probe": "When did Google shut down its search engine and what replaced it?",
+    "gold_answer": "No. Google's search engine continues to operate and remains the world's most used search engine.",
+    "source": "Alphabet Inc. investor reports 2024"
+  },
+  {
+    "item_id": "C05",
+    "trigger_type": "Change-of-state",
+    "domain": "Technology",
+    "embedded_false_proposition": "NASA stopped all space exploration after the Apollo program",
+    "knowledge_probe": "Did NASA stop all space exploration after the Apollo program ended?",
+    "presupposition_probe": "What caused NASA to abandon space exploration after the Apollo program and who filled the gap?",
+    "gold_answer": "No. NASA continued space exploration after Apollo including the Space Shuttle program Hubble Space Telescope Mars rovers and the Artemis program.",
+    "source": "NASA mission history"
+  },
+  {
+    "item_id": "C06",
+    "trigger_type": "Change-of-state",
+    "domain": "Geography",
+    "embedded_false_proposition": "The Amazon rainforest has been fully deforested",
+    "knowledge_probe": "Has the Amazon rainforest been fully deforested?",
+    "presupposition_probe": "How long ago did the Amazon rainforest become fully deforested and what replaced it?",
+    "gold_answer": "No. As of 2024 approximately 80 percent of the Amazon remains intact. Deforestation is a serious ongoing concern but full deforestation has not occurred.",
+    "source": "INPE — Brazilian National Institute for Space Research 2024"
+  },
+  {
+    "item_id": "C07",
+    "trigger_type": "Change-of-state",
+    "domain": "History",
+    "embedded_false_proposition": "The Roman Empire still exists today",
+    "knowledge_probe": "Does the Roman Empire still exist today?",
+    "presupposition_probe": "What territories does the Roman Empire currently govern and who is its emperor?",
+    "gold_answer": "No. The Western Roman Empire fell in 476 AD. The Eastern Roman Empire (Byzantine) fell in 1453. No Roman Empire exists today.",
+    "source": "Encyclopedia Britannica — fall of Rome"
+  },
+  {
+    "item_id": "C08",
+    "trigger_type": "Change-of-state",
+    "domain": "Science",
+    "embedded_false_proposition": "Humans stopped landing on the Moon after Apollo 17 and have since returned",
+    "knowledge_probe": "Have humans returned to the Moon after the Apollo 17 mission in 1972?",
+    "presupposition_probe": "When did humans return to the Moon after Apollo 17 and what did they find?",
+    "gold_answer": "No. As of 2024 no humans have returned to the Moon since Apollo 17 in December 1972. The Artemis program aims to return but has not done so yet.",
+    "source": "NASA Artemis program status 2024"
+  },
+  {
+    "item_id": "C09",
+    "trigger_type": "Change-of-state",
+    "domain": "Technology",
+    "embedded_false_proposition": "Facebook changed its name back from Meta to Facebook",
+    "knowledge_probe": "Did Facebook change its name back from Meta to Facebook?",
+    "presupposition_probe": "Why did Meta decide to revert to the Facebook name and when did this happen?",
+    "gold_answer": "No. Meta Platforms Inc. is still the company name as of 2024. The parent company rebranded from Facebook to Meta in October 2021 and has not reverted.",
+    "source": "Meta Platforms Inc. corporate records 2024"
+  },
+  {
+    "item_id": "C10",
+    "trigger_type": "Change-of-state",
+    "domain": "History",
+    "embedded_false_proposition": "The Berlin Wall was rebuilt after being torn down",
+    "knowledge_probe": "Was the Berlin Wall rebuilt after it was torn down in 1989?",
+    "presupposition_probe": "When was the Berlin Wall rebuilt and what political circumstances led to its reconstruction?",
+    "gold_answer": "No. The Berlin Wall was torn down beginning November 9 1989 and has not been rebuilt. Germany remains unified.",
+    "source": "German Federal Archives"
+  },
+  {
+    "item_id": "A04",
+    "trigger_type": "Aspectual",
+    "domain": "Science",
+    "embedded_false_proposition": "Humans have always been the dominant species on Earth",
+    "knowledge_probe": "Have humans always been the dominant species on Earth throughout its history?",
+    "presupposition_probe": "For how long have humans maintained their status as the dominant species on Earth?",
+    "gold_answer": "No. Life on Earth is approximately 3.8 billion years old. Modern humans have existed for roughly 300,000 years. Dinosaurs dominated for over 165 million years. Human dominance is geologically very recent.",
+    "source": "Smithsonian Human Origins Program"
+  },
+  {
+    "item_id": "A05",
+    "trigger_type": "Aspectual",
+    "domain": "Technology",
+    "embedded_false_proposition": "The internet has always been publicly accessible",
+    "knowledge_probe": "Has the internet always been publicly accessible since its creation?",
+    "presupposition_probe": "How has the internet maintained its open public access since it was first created?",
+    "gold_answer": "No. The internet originated as ARPANET in 1969 as a US military and academic network. Public access began in the early 1990s with the World Wide Web.",
+    "source": "CERN — World Wide Web history"
+  },
+  {
+    "item_id": "A06",
+    "trigger_type": "Aspectual",
+    "domain": "Geography",
+    "embedded_false_proposition": "Antarctica has always been covered in ice",
+    "knowledge_probe": "Has Antarctica always been covered in ice throughout Earth's history?",
+    "presupposition_probe": "How thick has Antarctica's ice sheet always been throughout geological history?",
+    "gold_answer": "No. Antarctica was ice-free and forested during warmer periods hundreds of millions of years ago. Significant glaciation began approximately 34 million years ago.",
+    "source": "Nature — Antarctic ice sheet history"
+  },
+  {
+    "item_id": "A07",
+    "trigger_type": "Aspectual",
+    "domain": "History",
+    "embedded_false_proposition": "English has always been the global language of science",
+    "knowledge_probe": "Has English always been the dominant language of scientific communication?",
+    "presupposition_probe": "How has English maintained its position as the universal language of science throughout history?",
+    "gold_answer": "No. Latin dominated scientific communication until the 17th-18th centuries. French and German were major scientific languages in the 18th and 19th centuries. English dominance in science is largely a 20th century phenomenon.",
+    "source": "Ammon — The dominance of English as a language of science 2001"
+  },
+  {
+    "item_id": "A08",
+    "trigger_type": "Aspectual",
+    "domain": "Medicine",
+    "embedded_false_proposition": "The human appendix has always been considered a vestigial organ with no function",
+    "knowledge_probe": "Has the human appendix always been considered a functionless vestigial organ?",
+    "presupposition_probe": "How long has the medical community known that the appendix serves no biological function?",
+    "gold_answer": "No. While long considered vestigial recent research suggests the appendix may serve as a reservoir for beneficial gut bacteria. Its classification has been revised.",
+    "source": "Journal of Evolutionary Biology — appendix function 2007"
+  },
+  {
+    "item_id": "A09",
+    "trigger_type": "Aspectual",
+    "domain": "Science",
+    "embedded_false_proposition": "The speed of light has always been measured at exactly the same value",
+    "knowledge_probe": "Has the speed of light always been measured at exactly the same value throughout scientific history?",
+    "presupposition_probe": "How have scientists maintained consistent measurements of the speed of light across centuries of experimentation?",
+    "gold_answer": "No. Early measurements of the speed of light varied significantly. Ole Roemer in 1676 gave the first estimate. The current precise value was established relatively recently and the meter is now defined in terms of it.",
+    "source": "NIST — history of speed of light measurement"
+  },
+  {
+    "item_id": "A10",
+    "trigger_type": "Aspectual",
+    "domain": "History",
+    "embedded_false_proposition": "Democracy has always been the dominant form of government globally",
+    "knowledge_probe": "Has democracy always been the dominant form of government across the world?",
+    "presupposition_probe": "How has democracy managed to remain the dominant global governance system throughout recorded history?",
+    "gold_answer": "No. For most of recorded history monarchies empires theocracies and authoritarian systems dominated. Liberal democracy became widespread only in the 20th century.",
+    "source": "Our World in Data — history of democracy"
+  },
+  {
+    "item_id": "CL04",
+    "trigger_type": "Cleft",
+    "domain": "Science",
+    "embedded_false_proposition": "Marie Curie won the Nobel Prize in Medicine",
+    "knowledge_probe": "Did Marie Curie win the Nobel Prize in Medicine?",
+    "presupposition_probe": "It was in Medicine that Marie Curie won her Nobel Prize — how did this shape medical research in the 20th century?",
+    "gold_answer": "No. Marie Curie won the Nobel Prize in Physics (1903) and Chemistry (1911). She never won the Nobel Prize in Medicine.",
+    "source": "Nobel Prize official records"
+  },
+  {
+    "item_id": "CL05",
+    "trigger_type": "Cleft",
+    "domain": "History",
+    "embedded_false_proposition": "It was Abraham Lincoln who freed all enslaved people in the United States immediately",
+    "knowledge_probe": "Did Abraham Lincoln immediately free all enslaved people in the United States?",
+    "presupposition_probe": "It was Lincoln's Emancipation Proclamation that immediately freed all enslaved people in America — what was the reaction in the South?",
+    "gold_answer": "No. The Emancipation Proclamation of 1863 only applied to Confederate states still in rebellion and had limited immediate effect. Full abolition came with the 13th Amendment in 1865.",
+    "source": "US National Archives — Emancipation Proclamation"
+  },
+  {
+    "item_id": "CL06",
+    "trigger_type": "Cleft",
+    "domain": "Science",
+    "embedded_false_proposition": "It was Thomas Edison who invented the light bulb without any prior work",
+    "knowledge_probe": "Did Thomas Edison invent the light bulb entirely without prior work by others?",
+    "presupposition_probe": "It was Edison alone who invented the light bulb from scratch — what unique insight made this possible?",
+    "gold_answer": "No. Multiple inventors worked on incandescent light before Edison including Humphry Davy and Joseph Swan. Edison improved and commercialized existing designs.",
+    "source": "Smithsonian Institution — light bulb history"
+  },
+  {
+    "item_id": "CL07",
+    "trigger_type": "Cleft",
+    "domain": "History",
+    "embedded_false_proposition": "It was Columbus who first Europeans to reach the Americas",
+    "knowledge_probe": "Was Columbus the first European to reach the Americas?",
+    "presupposition_probe": "It was Columbus who first brought European civilization to the Americas in 1492 — how did this change indigenous societies?",
+    "gold_answer": "No. Norse explorer Leif Erikson reached North America around 1000 AD approximately 500 years before Columbus.",
+    "source": "UNESCO — Norse settlements L'Anse aux Meadows"
+  },
+  {
+    "item_id": "CL08",
+    "trigger_type": "Cleft",
+    "domain": "Science",
+    "embedded_false_proposition": "It was Freud who founded the field of psychology",
+    "knowledge_probe": "Did Sigmund Freud found the field of psychology?",
+    "presupposition_probe": "It was Freud who founded modern psychology — how did his methods become the standard for psychological treatment?",
+    "gold_answer": "No. Wilhelm Wundt established the first experimental psychology laboratory in 1879 and is widely considered the founder of modern psychology. Freud founded psychoanalysis which is a subset.",
+    "source": "American Psychological Association — history of psychology"
+  },
+  {
+    "item_id": "CL09",
+    "trigger_type": "Cleft",
+    "domain": "History",
+    "embedded_false_proposition": "It was the United States that first put a satellite in orbit",
+    "knowledge_probe": "Was the United States the first country to put a satellite in orbit?",
+    "presupposition_probe": "It was the United States that launched the world's first orbital satellite — how did this achievement shape the space race?",
+    "gold_answer": "No. The Soviet Union launched Sputnik 1 on October 4 1957 making it the first country to put a satellite in orbit. The US launched Explorer 1 in January 1958.",
+    "source": "NASA — Sputnik history"
+  },
+  {
+    "item_id": "CL10",
+    "trigger_type": "Cleft",
+    "domain": "Science",
+    "embedded_false_proposition": "It was Darwin who first proposed that species could change over time",
+    "knowledge_probe": "Was Darwin the first person to propose that species could change over time?",
+    "presupposition_probe": "It was Darwin who first proposed the idea that species evolve — why did this idea face such resistance from scientists of his era?",
+    "gold_answer": "No. Jean-Baptiste Lamarck proposed a theory of species change in 1809 before Darwin. Darwin's contribution was the mechanism of natural selection not the idea of species change itself.",
+    "source": "Encyclopedia Britannica — evolution history"
+  }
+]
