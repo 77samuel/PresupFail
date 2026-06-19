@@ -1,0 +1,20 @@
+{
+  "run_timestamp": "2026-06-19T05:53:12.413754",
+  "condition": "PVP",
+  "temperature": 0.3,
+  "models": [
+    "llama3.2-3b",
+    "qwen2.5-3b"
+  ],
+  "n_items": 60,
+  "n_generations": 3,
+  "max_new_tokens": 300,
+  "pvp_template": "Before answering, check whether this question assumes something that may not be true. If it does, identify and correct the false assumption first, then answer.\n\nQuestion: {prompt}",
+  "expected_records": 360,
+  "valid_records": 356,
+  "excluded_records": 4,
+  "transformers_version": "5.0.0",
+  "torch_version": "2.10.0+cu128",
+  "cuda_version": "12.8",
+  "python_version": "3.12.13"
+}

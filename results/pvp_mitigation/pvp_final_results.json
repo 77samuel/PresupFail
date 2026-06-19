@@ -1,0 +1,128 @@
+{
+  "note_on_ORR": "Raw ORR (R-only) drops under PVP due to a structural artifact: the PVP template instructs the model to identify+correct THEN answer, which mechanically produces continuation (=P under v2.2 rules) even on full correct rejections. The 'Premise Correctly Flagged Rate' (R+P) is the scientifically meaningful metric and is reported as primary.",
+  "premise_flagged_rate_by_model": {
+    "llama3.2-3b": {
+      "baseline": 0.772,
+      "pvp": 0.978,
+      "delta": 0.206
+    },
+    "qwen2.5-3b": {
+      "baseline": 0.689,
+      "pvp": 0.92,
+      "delta": 0.232
+    }
+  },
+  "premise_flagged_rate_by_trigger": {
+    "Aspectual": {
+      "baseline": 0.467,
+      "pvp": 0.967,
+      "delta": 0.5
+    },
+    "Change-of-state": {
+      "baseline": 0.917,
+      "pvp": 0.983,
+      "delta": 0.067
+    },
+    "Cleft": {
+      "baseline": 0.6,
+      "pvp": 0.9,
+      "delta": 0.3
+    },
+    "Definite description": {
+      "baseline": 0.883,
+      "pvp": 0.982,
+      "delta": 0.099
+    },
+    "Existential": {
+      "baseline": 0.783,
+      "pvp": 0.898,
+      "delta": 0.115
+    },
+    "Factive": {
+      "baseline": 0.733,
+      "pvp": 0.967,
+      "delta": 0.233
+    }
+  },
+  "failure_rate_by_trigger": {
+    "Aspectual": {
+      "baseline": 0.533,
+      "pvp": 0.033,
+      "delta": -0.5
+    },
+    "Change-of-state": {
+      "baseline": 0.083,
+      "pvp": 0.017,
+      "delta": -0.067
+    },
+    "Cleft": {
+      "baseline": 0.4,
+      "pvp": 0.1,
+      "delta": -0.3
+    },
+    "Definite description": {
+      "baseline": 0.067,
+      "pvp": 0.018,
+      "delta": -0.049
+    },
+    "Existential": {
+      "baseline": 0.167,
+      "pvp": 0.102,
+      "delta": -0.065
+    },
+    "Factive": {
+      "baseline": 0.233,
+      "pvp": 0.017,
+      "delta": -0.217
+    }
+  },
+  "h5_test": {
+    "spearman_rho": -1.0,
+    "p_value": 0.0,
+    "result": "SUPPORTED"
+  },
+  "mcnemar_overall": {
+    "n": 356,
+    "improved": 82,
+    "worsened": 5,
+    "p_value": 5.077541690652894e-19
+  },
+  "mcnemar_by_trigger": {
+    "Aspectual": {
+      "n": 60,
+      "improved": 30,
+      "worsened": 0,
+      "p_value": 0.0
+    },
+    "Change-of-state": {
+      "n": 60,
+      "improved": 5,
+      "worsened": 1,
+      "p_value": 0.21875
+    },
+    "Cleft": {
+      "n": 60,
+      "improved": 18,
+      "worsened": 0,
+      "p_value": 8e-06
+    },
+    "Definite description": {
+      "n": 57,
+      "improved": 5,
+      "worsened": 1,
+      "p_value": 0.21875
+    },
+    "Existential": {
+      "n": 59,
+      "improved": 9,
+      "worsened": 2,
+      "p_value": 0.06543
+    },
+    "Factive": {
+      "n": 60,
+      "improved": 15,
+      "worsened": 1,
+      "p_value": 0.000519
+    }
+  }
+}

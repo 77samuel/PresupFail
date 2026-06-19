@@ -1,0 +1,132 @@
+{
+  "primary_metric_ORR_as_preregistered": {
+    "definition": "ORR = proportion of responses labeled R (clean rejection) -- exactly as pre-registered before Run 3",
+    "by_model": {
+      "llama3.2-3b": {
+        "baseline": 0.6667,
+        "pvp": 0.0111,
+        "delta": -0.6556
+      },
+      "qwen2.5-3b": {
+        "baseline": 0.5389,
+        "pvp": 0.0227,
+        "delta": -0.5162
+      }
+    },
+    "overall": {
+      "baseline": 0.6028,
+      "pvp": 0.0169,
+      "delta": -0.5859
+    },
+    "interpretation": "ORR decreases sharply under PVP. This is an expected structural consequence of the PVP template itself, which explicitly instructs the model to identify and correct the false assumption FIRST, THEN answer -- mechanically converting clean rejections (R) into rejection-plus-continuation (P) under the unchanged v2.2 annotation rules. This is reported as the primary pre-registered outcome, not omitted or replaced."
+  },
+  "secondary_metric_flagging_rate": {
+    "definition": "Flagging Rate = proportion of responses labeled R or P (i.e., the model explicitly identified the false premise, regardless of subsequent continuation). Introduced as a secondary, exploratory analysis to interpret the ORR result, not as a replacement for the pre-registered primary outcome.",
+    "by_model": {
+      "llama3.2-3b": {
+        "baseline": 0.7722,
+        "pvp": 0.9778,
+        "delta": 0.2056
+      },
+      "qwen2.5-3b": {
+        "baseline": 0.6889,
+        "pvp": 0.9205,
+        "delta": 0.2316
+      }
+    },
+    "by_trigger": {
+      "Aspectual": {
+        "baseline": 0.4667,
+        "pvp": 0.9667,
+        "delta": 0.5
+      },
+      "Change-of-state": {
+        "baseline": 0.9167,
+        "pvp": 0.9833,
+        "delta": 0.0667
+      },
+      "Cleft": {
+        "baseline": 0.6,
+        "pvp": 0.9,
+        "delta": 0.3
+      },
+      "Definite description": {
+        "baseline": 0.8833,
+        "pvp": 0.9825,
+        "delta": 0.0991
+      },
+      "Existential": {
+        "baseline": 0.7833,
+        "pvp": 0.8983,
+        "delta": 0.115
+      },
+      "Factive": {
+        "baseline": 0.7333,
+        "pvp": 0.9667,
+        "delta": 0.2333
+      }
+    }
+  },
+  "h5_test_CORRECTED": {
+    "method": "Spearman rank correlation, baseline ORR (R-only, the pre-registered metric) per trigger vs. flagging-rate delta per trigger",
+    "n": 6,
+    "spearman_rho": -1.0,
+    "p_value_scipy_default": "~0.0000 (t-approximation, NOT VALID for n=6)",
+    "p_value_exact_corrected": 0.002778,
+    "p_value_note": "scipy.stats.spearmanr uses a t-distribution approximation unsuitable for n=6. The honest exact two-tailed p-value for a perfect rank correlation with n=6 is 2/6! = 0.002778. This is the value to report in the paper.",
+    "result": "SUPPORTED (rho=-1.000, exact p=0.0028 < 0.05)"
+  },
+  "mcnemar_test_VERIFIED": {
+    "method": "Exact McNemar's test, independently re-verified via two methods (statsmodels exact + manual binomial cross-check on discordant pairs)",
+    "overall": {
+      "n": 356,
+      "improved": 82,
+      "worsened": 5,
+      "p_value": 5.0775e-19
+    },
+    "by_trigger": {
+      "Aspectual": {
+        "n": 60,
+        "improved": 30,
+        "worsened": 0,
+        "p_value": 0.0
+      },
+      "Change-of-state": {
+        "n": 60,
+        "improved": 5,
+        "worsened": 1,
+        "p_value": 0.21875
+      },
+      "Cleft": {
+        "n": 60,
+        "improved": 18,
+        "worsened": 0,
+        "p_value": 8e-06
+      },
+      "Definite description": {
+        "n": 57,
+        "improved": 5,
+        "worsened": 1,
+        "p_value": 0.21875
+      },
+      "Existential": {
+        "n": 59,
+        "improved": 9,
+        "worsened": 2,
+        "p_value": 0.06543
+      },
+      "Factive": {
+        "n": 60,
+        "improved": 15,
+        "worsened": 1,
+        "p_value": 0.000519
+      }
+    },
+    "verification_status": "Independently re-verified from raw saved annotation files, not from prior in-conversation calculation. Two methods agree exactly."
+  },
+  "honest_negative_findings": [
+    "S03 (Napoleon height): PVP fails on both models -- false height claim still affirmed despite verification instruction",
+    "CL04 (Curie/Medicine), CL09 (US satellite): Qwen's self-check explicitly concludes the false premise 'is accurate' -- PVP backfires",
+    "F10 (Einstein math) Qwen gen1: PVP makes this specific generation worse, softening into a partial acceptance of the myth"
+  ]
+}
