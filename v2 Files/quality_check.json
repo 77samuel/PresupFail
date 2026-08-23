@@ -1,0 +1,7 @@
+{
+  "no_duplicate_ids": true,
+  "balanced_triggers": true,
+  "same_prop_across_triggers": true,
+  "equal_true_false": true,
+  "all_propositions_crossed": true
+}
